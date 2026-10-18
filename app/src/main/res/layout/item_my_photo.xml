@@ -58,7 +58,7 @@
                 android:id="@+id/reason"
                 style="@style/MetaText"
                 android:layout_marginTop="4dp"
-                android:textColor="@color/status_rejected"
+                android:textColor="@color/status_error"
                 android:visibility="gone" />
         </LinearLayout>
     </LinearLayout>

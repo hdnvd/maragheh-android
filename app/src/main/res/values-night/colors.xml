@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primary">#FFB4A8</color>
-    <color name="on_primary">#690000</color>
-    <color name="primary_container">#930000</color>
-    <color name="on_primary_container">#FFDAD4</color>
-    <color name="secondary">#D8D0CE</color>
-    <color name="on_secondary">#363636</color>
-    <color name="secondary_container">#3A3433</color>
-    <color name="on_secondary_container">#ECE6E4</color>
-    <color name="background">#141110</color>
-    <color name="surface">#1E1A19</color>
-    <color name="surface_variant">#2A2524</color>
-    <color name="on_surface">#ECE6E4</color>
-    <color name="on_surface_variant">#B5ACAA</color>
-    <color name="outline">#4A4341</color>
+    <!-- Dark theme derived from the same palette: light teal accents on deep navy surfaces -->
+    <color name="primary">#74C5BC</color>
+    <color name="on_primary">#0E2D3D</color>
+    <color name="primary_container">#1E4A5E</color>
+    <color name="on_primary_container">#D7E7EA</color>
+    <color name="secondary">#74C5BC</color>
+    <color name="on_secondary">#0E2D3D</color>
+    <color name="secondary_container">#1E4A5E</color>
+    <color name="on_secondary_container">#D7E7EA</color>
+    <color name="background">#0B1B23</color>
+    <color name="surface">#122630</color>
+    <color name="surface_variant">#1B3340</color>
+    <color name="on_surface">#E6EEF0</color>
+    <color name="on_surface_variant">#A7BCC3</color>
+    <color name="outline">#2A4552</color>
+    <color name="link">#74C5BC</color>
 </resources>

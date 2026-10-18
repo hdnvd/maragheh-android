@@ -59,7 +59,7 @@ public class HomeFragment extends Fragment implements MainActivity.ScrollToTop {
         header(b.headerCelebrities, R.string.title_celebrities, R.id.nav_celebrities);
         header(b.headerPhotos, R.string.latest_photos, R.id.nav_photos);
 
-        b.refresh.setColorSchemeResources(R.color.brand_red);
+        b.refresh.setColorSchemeResources(R.color.brand_secondary);
         b.refresh.setOnChildScrollUpCallback((parent, child) -> b.content.canScrollVertically(-1));
         b.refresh.setOnRefreshListener(this::load);
         b.content.setVisibility(View.INVISIBLE);

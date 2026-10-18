@@ -68,7 +68,7 @@ public class PostsFragment extends Fragment implements MainActivity.ScrollToTop 
                 if (!loading && hasMore) load(page + 1);
             }
         });
-        b.refresh.setColorSchemeResources(R.color.brand_red);
+        b.refresh.setColorSchemeResources(R.color.brand_secondary);
         b.refresh.setOnChildScrollUpCallback((p, c) -> b.list.canScrollVertically(-1));
         b.refresh.setOnRefreshListener(this::reload);
         b.search.addTextChangedListener(new TextWatcher() {

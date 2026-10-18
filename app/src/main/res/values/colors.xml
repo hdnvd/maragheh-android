@@ -1,27 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Brand (from the Maragheh logo) -->
-    <color name="brand_red">#C00000</color>
-    <color name="brand_red_dark">#7A0000</color>
-    <color name="brand_charcoal">#363636</color>
+    <!-- Brand palette (design tokens) -->
+    <color name="brand_primary">#153B50</color>       <!-- color.brand.primary: brand, headers, navigation -->
+    <color name="brand_primary_dark">#0E2D3D</color>  <!-- color.action.hover -->
+    <color name="brand_secondary">#187C80</color>     <!-- color.brand.secondary: buttons, active elements -->
+    <color name="brand_accent">#74C5BC</color>        <!-- color.brand.accent: decoration -->
+    <color name="brand_mist">#D7E7EA</color>          <!-- color.action.selected / bg.surface.alt -->
+    <color name="brand_gold">#E5B75C</color>
+    <color name="focus_ring">#1769AA</color>
 
-    <color name="primary">#C00000</color>
+    <!-- Material roles (light) -->
+    <color name="primary">#153B50</color>
     <color name="on_primary">#FFFFFF</color>
-    <color name="primary_container">#FFDAD4</color>
-    <color name="on_primary_container">#410000</color>
-    <color name="secondary">#363636</color>
+    <color name="primary_container">#D7E7EA</color>
+    <color name="on_primary_container">#153B50</color>
+    <color name="secondary">#187C80</color>
     <color name="on_secondary">#FFFFFF</color>
-    <color name="secondary_container">#ECE6E4</color>
-    <color name="on_secondary_container">#1F1B1A</color>
-    <color name="background">#F8F5F4</color>
-    <color name="surface">#FFFFFF</color>
-    <color name="surface_variant">#F1ECEA</color>
-    <color name="on_surface">#1F1B1A</color>
-    <color name="on_surface_variant">#6B6260</color>
-    <color name="outline">#D8D0CE</color>
+    <color name="secondary_container">#D7E7EA</color>
+    <color name="on_secondary_container">#153B50</color>
+    <color name="background">#F3F7F8</color>          <!-- color.bg.canvas -->
+    <color name="surface">#FFFFFF</color>             <!-- color.bg.surface -->
+    <color name="surface_variant">#D7E7EA</color>     <!-- color.bg.surface.alt -->
+    <color name="on_surface">#26343B</color>          <!-- color.text.primary -->
+    <color name="on_surface_variant">#52656C</color>  <!-- color.text.secondary -->
+    <color name="outline">#D4E0E3</color>             <!-- color.border.default -->
+    <color name="link">#187C80</color>
 
-    <color name="status_pending">#E8A317</color>
-    <color name="status_approved">#2E8B57</color>
-    <color name="status_rejected">#C00000</color>
+    <!-- Status -->
+    <color name="status_success">#237547</color>
+    <color name="status_warning">#946200</color>
+    <color name="status_error">#B42318</color>
+
     <color name="scrim_dark">#99000000</color>
 </resources>

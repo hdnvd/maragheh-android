@@ -13,8 +13,8 @@ public final class HtmlPage {
         Context ctx = webView.getContext();
         boolean dark = (ctx.getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK)
                 == Configuration.UI_MODE_NIGHT_YES;
-        String fg = dark ? "#ECE6E4" : "#2A2524";
-        String link = dark ? "#FFB4A8" : "#C00000";
+        String fg = dark ? "#E6EEF0" : "#26343B";
+        String link = dark ? "#74C5BC" : "#187C80";
         String html = "<!doctype html><html dir='rtl' lang='fa'><head><meta charset='utf-8'>"
                 + "<meta name='viewport' content='width=device-width,initial-scale=1'>"
                 + "<style>"

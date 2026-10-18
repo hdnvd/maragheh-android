@@ -62,7 +62,7 @@ public class PhotosFragment extends Fragment implements MainActivity.ScrollToTop
                 else if (dy < -8) b.fabUpload.extend();
             }
         });
-        b.refresh.setColorSchemeResources(R.color.brand_red);
+        b.refresh.setColorSchemeResources(R.color.brand_secondary);
         b.refresh.setOnChildScrollUpCallback((p, c) -> b.list.canScrollVertically(-1));
         b.refresh.setOnRefreshListener(() -> load(1));
         b.fabUpload.setOnClickListener(v -> {

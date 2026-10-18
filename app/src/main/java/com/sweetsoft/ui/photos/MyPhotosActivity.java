@@ -59,7 +59,7 @@ public class MyPhotosActivity extends BaseActivity {
                 if (!loading && hasMore) load(page + 1);
             }
         });
-        b.refresh.setColorSchemeResources(R.color.brand_red);
+        b.refresh.setColorSchemeResources(R.color.brand_secondary);
         b.refresh.setOnChildScrollUpCallback((p, c) -> b.list.canScrollVertically(-1));
         b.refresh.setOnRefreshListener(() -> load(1));
         state.loading();
@@ -119,13 +119,13 @@ public class MyPhotosActivity extends BaseActivity {
             int color;
             int label;
             if (Photo.APPROVED.equals(p.status)) {
-                color = R.color.status_approved;
+                color = R.color.status_success;
                 label = R.string.status_approved;
             } else if (Photo.REJECTED.equals(p.status)) {
-                color = R.color.status_rejected;
+                color = R.color.status_error;
                 label = R.string.status_rejected;
             } else {
-                color = R.color.status_pending;
+                color = R.color.status_warning;
                 label = R.string.status_pending;
             }
             h.b.status.setText(label);

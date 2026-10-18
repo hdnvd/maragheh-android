@@ -9,15 +9,15 @@
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
         android:layout_height="280dp"
-        android:background="@color/brand_red"
+        android:background="@color/brand_primary"
         android:theme="@style/ThemeOverlay.Material3.Dark.ActionBar">
 
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:id="@+id/collapsing"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:contentScrim="@color/brand_red"
-            app:statusBarScrim="@color/brand_red_dark"
+            app:contentScrim="@color/brand_primary"
+            app:statusBarScrim="@color/brand_primary_dark"
             app:titleEnabled="false"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 

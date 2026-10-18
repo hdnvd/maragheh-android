@@ -35,7 +35,7 @@
         android:layout_margin="16dp"
         android:text="@string/send_photo"
         android:textColor="@android:color/white"
-        app:backgroundTint="@color/brand_red"
+        app:backgroundTint="@color/brand_secondary"
         app:icon="@drawable/ic_add_photo"
         app:iconTint="@android:color/white" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

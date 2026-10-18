@@ -10,7 +10,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/brand_red"
+        android:background="@color/brand_primary"
         android:theme="@style/ThemeOverlay.Material3.Dark.ActionBar"
         app:titleTextColor="@android:color/white"
         app:title="@string/title_about" />
@@ -76,7 +76,8 @@
                 android:layout_height="56dp"
                 android:layout_marginTop="24dp"
                 android:text="@string/rate_app"
-                app:icon="@drawable/ic_star" />
+                app:icon="@drawable/ic_star"
+                app:iconTint="@color/brand_gold" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/share"
