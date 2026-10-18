@@ -20,7 +20,7 @@ android {
         versionCode 38
         versionName '4.0'
 
-        buildConfigField 'String', 'API_BASE_URL', '"https://api.maraghecity.ir/v1/"'
+        buildConfigField 'String', 'API_BASE_URL', '"https://api.maraghehcity.ir/v1/"'
         resourceConfigurations += ['fa']
     }
 
