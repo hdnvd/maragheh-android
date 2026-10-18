@@ -1,5 +1,6 @@
 package com.sweetsoft.ui;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -28,6 +29,7 @@ import com.sweetsoft.ui.news.NewsFragment;
 import com.sweetsoft.ui.photos.MyPhotosActivity;
 import com.sweetsoft.ui.photos.PhotosFragment;
 import com.sweetsoft.ui.posts.PostsFragment;
+import com.sweetsoft.util.AppLocale;
 import com.sweetsoft.util.SystemBars;
 
 import retrofit2.Call;
@@ -44,10 +46,10 @@ public class MainActivity extends AppCompatActivity {
         SplashScreen.installSplashScreen(this);
         SystemBars.enable(this);
         super.onCreate(savedInstanceState);
-        // Persian UI (RTL layout) even when the phone's system language is English.
-        // Must run once an activity exists; on first launch it recreates this activity.
-        if (!"fa".equals(AppCompatDelegate.getApplicationLocales().toLanguageTags())) {
-            AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags("fa"));
+        // Earlier test builds registered "fa" as Android's per-app language, which makes Gboard switch to
+        // Persian on every launch. Persian is now applied in-app (AppLocale); clear the old system setting.
+        if (!AppCompatDelegate.getApplicationLocales().isEmpty()) {
+            AppCompatDelegate.setApplicationLocales(LocaleListCompat.getEmptyLocaleList());
         }
         b = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(b.getRoot());
@@ -67,6 +69,11 @@ public class MainActivity extends AppCompatActivity {
         });
         b.bottomNav.setSelectedItemId(currentTab);
         showTab(currentTab);
+    }
+
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(AppLocale.wrap(base));
     }
 
     /** Used by the home screen's "see all" buttons. */

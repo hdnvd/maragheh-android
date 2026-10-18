@@ -1,5 +1,6 @@
 package com.sweetsoft.ui.common;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -8,6 +9,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import com.sweetsoft.util.AppLocale;
 import com.sweetsoft.util.SystemBars;
 
 import java.util.ArrayList;
@@ -18,6 +20,11 @@ import retrofit2.Call;
 /** Toolbar with back arrow + cancels in-flight requests when the screen closes. */
 public abstract class BaseActivity extends AppCompatActivity {
     private final List<Call<?>> calls = new ArrayList<>();
+
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(AppLocale.wrap(base));
+    }
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

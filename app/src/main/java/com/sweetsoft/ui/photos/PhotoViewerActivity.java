@@ -16,6 +16,7 @@ import com.bumptech.glide.Glide;
 import com.sweetsoft.R;
 import com.sweetsoft.data.model.Photo;
 import com.sweetsoft.databinding.ActivityPhotoViewerBinding;
+import com.sweetsoft.util.AppLocale;
 import com.sweetsoft.util.Fa;
 import com.sweetsoft.util.SystemBars;
 
@@ -40,6 +41,11 @@ public class PhotoViewerActivity extends AppCompatActivity {
         ctx.startActivity(new Intent(ctx, PhotoViewerActivity.class)
                 .putExtra(EXTRA_PHOTOS, window)
                 .putExtra(EXTRA_POSITION, position - from));
+    }
+
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(AppLocale.wrap(base));
     }
 
     @SuppressWarnings("unchecked")
